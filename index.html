@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  
+</head>
+
+
+
+<body>
+    <header class="site-header">
+        <div class="contenedor header-grid">
+            <div class="logo">
+                <img src="build/img/Logo-horizontal.svg" alt="logo wingu app">
+            </div>
+            <div class="contenido-header">
+                <h1>Te damos la bienvenida a Wingu</h1>
+                
+                <video id="video" autoplay muted loop>
+                    <source src="./build/img/wingu.mp4" type="video/mp4">
+                </video>
+                
+            </div>
+            <a href="#miFormulario"  class="boton-primario">Quiero Donar</a>    
+        </div>
+    </header>
+
+    <section class="contenedor seccion">
+        <div class="crea-grid">
+            <div class="imagen">
+                <img src="build/img/imagen_donacion.png" alt="imagen podcast">
+            </div>
+            <div class="contenido">
+                <h2>Contigo hacemos más...</h2>
+                <p>Quienes somos ? <br>
+                Somos una organización sin fines de lucro de innovación y tecnología cívica.
+                Desde 2008 hicimos un largo recorrido que contamos con orgullo y en el que fuimos forjando los valores que nos definen y determinan..<br>
+                Queremos consolidar la cultura digital y la tecnología como agentes clave del cambio social en América Latina y el mundo.
+
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios seccion">
+        <div class="grid-beneficios contenedor">
+            <div class="contenido-beneficios">
+                <h2>Cultura digital, impacto social</h2>
+                <p> Nuestros proyectos e iniciativas están hechos para todas las personas..
+                <br>    
+                En la actualidad contamos con un equipo multidisciplinario con el que tenemos el objetivo de fortalecer el impacto social de las instituciones de toda la región.
+                <br>
+                La transparencia y la confianza son esenciales en nuestro día a día. No concebimos otra manera de hacer las cosas.
+                </p>
+                
+            </div>
+
+            <div class="imagen">
+                <img src="build/img/donaciones_cover.png" alt="imagen podcast">
+            </div>
+        </div>
+    </section>
+
+    <section class="estadisticas seccion contenedor">
+        <h2>Trabajamos con propósito</h2>
+        <p>Somos una organización en constante crecimiento y expansión que trabaja de forma híbrida en diferentes puntos del mapa.
+        A través de metodologías ágiles e innovadoras, trabajamos en potenciar proyectos e iniciativas sociales..</p>
+
+        <div>
+            
+            <div >
+                <div id="imageContainer">
+                    <img id="image" src="ruta-imagen-inicial.jpg" alt="Imagen">
+                </div>
+                
+            </div>
+        </div>
+    
+
+    <section class="planes seccion">
+        <div class="contenedor">
+            <div class="planes-header">
+                <div class="logo">
+                    <img src="build/img/Logo-horizontal.svg" alt="logo wingu app">
+                </div>
+                <p>Formulario de Solicitud de Donación</p>
+            </div>
+            <p class="descripcion">Nos encanta que estes aquí para aportar tu granito de arena y con ello hacer un mundo mejor.</p>
+            <form id="miFormulario" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        
+                <input type=hidden name="oid" value="00D8b0000032DDL">
+                <input type=hidden name="retURL" value="http://www.google.com">
+                <div class="form_group"> 
+                    <label for="salutation">Saludo</label><select  id="salutation" class="form_input"name="salutation"><option value="">--Ninguno--</option><option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                    <option value="Mx.">Mx.</option>
+                    <option value="Sr.">Sr.</option>
+                    <option value="sres.">sres.</option>
+                    <option value="Sra.">Sra.</option>
+                    <option value="Srita.">Srita.</option>
+                    <option value="X">X</option>
+                    <option value="Otros">Otros</option>
+                    </select><br>
+                                      
+                     <label for="first_name" >Nombre</label><input  id="first_name" class="form_input"  maxlength="40" name="first_name" size="20"  type="text" /><br>
+              
+                
+                    <label for="last_name">Apellidos</label><input  id="last_name" class="form_input"  maxlength="80" name="last_name" size="20"  type="text"  /><br>
+              
+                
+                    <label for="company">Compañía</label><input  id="company" class="form_input"  maxlength="40" name="company" size="40"  type="text" /><br>
+              
+              
+                    <label for="country">País</label><input  id="country" class="form_input"  maxlength="40" name="country" size="20"  type="text" /><br>
+               
+                
+                    <label for="phone">Teléfono</label><input  id="phone"class="form_input"  maxlength="40" name="phone" size="20"  type="number" /><br>
+               
+               
+                    <label for="mobile">Móvil</label><input  id="mobile"class="form_input"  maxlength="40" name="mobile" size="20"  type="number"  /><br>
+              
+                    <div class="form_checkbox">
+                    <label for="doNotCall">No llamar</label><input  id="doNotCall" class="form_checkinput"  name="doNotCall" type="checkbox" value="1" /><br>
+                    </div>
+                         
+                    <label for="email">Correo electrónico</label><input  id="email"class="form_input"  maxlength="80" name="email" size="20"  type="email"   /><br>
+            
+                    <div class="form_checkbox">  
+                    <label for="emailOptOut">No recibir correos electrónicos</label><input  id="emailOptOut"  class="form_checkinput toggle" name="emailOptOut" type="checkbox" value="1" /><br>
+                    </div>
+                    <label>Nombre de contacto:</label>
+                     <input  id="00N8b00000I2L8u" class="form_input"  maxlength="18" name="00N8b00000I2L8u" size="40" type="text" /><br>
+           
+                     <label>Telefono de contacto:</label><input  id="00N8b00000I2LAH"class="form_input"  maxlength="40" name="00N8b00000I2LAH" size="20" type="number" /><br>
+               
+                    <label for="">Tipo de donación:</label> <select  id="00N8b00000I2J1S" class="form_input" name="00N8b00000I2J1S" title="Tipo de donación"><option value="">
+                    --Ninguno--</option>
+                    <option value="Alimentos no perecederos">Alimentos no perecederos</option>
+                    <option value="Calzado">Calzado</option>
+                    <option value="Dinero">Dinero</option>
+                    <option value="Otros">Otros</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Tiempo">Tiempo</option>
+                    </select><br>
+                
+                
+                    <label for="">Tipo de operación:</label> </class><select  id="00N8b00000I2PTN"  class="form_input" name="00N8b00000I2PTN" title="Tipo de operación"><option value="">--Ninguno--</option><option value="Automáticamente">Automáticamente</option>
+                    <option value="Manualmente">Manualmente</option>
+                    </select><br>
+                
+               
+                    <label>Comentarios:</label><textarea  id="00N8b00000I2L9J" class="form_input" placeholder=" " name="00N8b00000I2L9J" type="text" placeholder=" Alguna informacion Adicional" wrap="soft"></textarea><br>
+                    <input type="submit" class="form_submit" name="submit">
+                </div>
+            </form>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor seccion testimoniales">
+        <div class="imagen">
+            <img src="build/img/feminindex.png" alt="imagen app">
+        </div>
+
+        <div class="contenido">
+            <h2>Testimoniales</h2>
+
+            <div class="testimonial">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum pariatur ea tempora aliquid quisquam sequi labore nemo debitis maiores, aperiam.</p>
+            </div>
+
+            <div class="testimonial">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum pariatur ea tempora aliquid quisquam sequi labore nemo debitis maiores, aperiam.</p>
+            </div>
+
+            <div class="testimonial">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum pariatur ea tempora aliquid quisquam sequi labore nemo debitis maiores, aperiam.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor footer-grid">
+            <div class="footer-widget">
+                <img class="logo" src="build/img/Logo-horizontal.svg" alt="logo podcast fm">
+            </div>
+
+            <div class="footer-widget">
+                <h3>Vision</h3>
+            </div>
+
+            <div class="footer-widget">
+                <h3>Mision</h3>
+            </div>
+
+            <div class="footer-widget">
+                <h3>Soporte</h3>
+            </div>
+        </div>
+
+        <p id="copyright">Wingu - Todos los derechos Reservados © </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+</body>
+</html>
